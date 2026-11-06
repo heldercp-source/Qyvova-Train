@@ -1,0 +1,6 @@
+{
+  "name": "QYVOVA FIT - Assistente de Treino & Musculação",
+  "description": "Aplicativo profissional de musculação e academia para organizar treinos, registrar séries com cronômetro de descanso, acompanhar evolução e consultar exercícios offline.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

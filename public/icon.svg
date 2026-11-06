@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191F28"/>
+      <stop offset="100%" stop-color="#101318"/>
+    </linearGradient>
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4FF6A"/>
+      <stop offset="100%" stop-color="#B7F34A"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle border highlight -->
+  <rect width="508" height="508" x="2" y="2" rx="110" fill="none" stroke="#222A35" stroke-width="4"/>
+
+  <!-- Athletic Ring (Q shape) -->
+  <circle cx="256" cy="236" r="132" fill="none" stroke="#222A35" stroke-width="36"/>
+  <circle cx="256" cy="236" r="132" fill="none" stroke="url(#limeGrad)" stroke-width="36" stroke-dasharray="620 220" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Barbell Plates in Center -->
+  <!-- Center Bar -->
+  <rect x="146" y="222" width="220" height="28" rx="14" fill="#FFFFFF" />
+  
+  <!-- Inner Plates -->
+  <rect x="190" y="180" width="16" height="112" rx="8" fill="url(#limeGrad)" />
+  <rect x="306" y="180" width="16" height="112" rx="8" fill="url(#limeGrad)" />
+
+  <!-- Outer Plates -->
+  <rect x="166" y="196" width="14" height="80" rx="7" fill="#A8B0BC" />
+  <rect x="332" y="196" width="14" height="80" rx="7" fill="#A8B0BC" />
+
+  <!-- Dynamic Q Kick / Energy Lightning tail -->
+  <path d="M320 300 L410 400 L370 410 L300 330 Z" fill="url(#limeGrad)" filter="url(#glow)"/>
+
+  <!-- QYVOVA text banner at bottom -->
+  <text x="256" y="458" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" letter-spacing="8" fill="#FFFFFF" text-anchor="middle">
+    QYVOVA <tspan fill="#B7F34A">FIT</tspan>
+  </text>
+</svg>
